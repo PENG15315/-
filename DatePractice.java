@@ -32,15 +32,13 @@ public class DatePractice {
     public long birth(String birth) throws ParseException {
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         Date parse = sdf.parse(birth);
-        long time = parse.getTime();
-        return time;
+        return parse.getTime();
     }
 
     //将当前日期转换为毫秒值
     public long now(){
         Date date=new Date();
-        long time = date.getTime();
-        return time;
+        return date.getTime();
     }
 }
 
